@@ -1,0 +1,13 @@
+Program:        COMP 2404 Assignment 1
+Author:         Taj Randhawa 
+Student Number: 101239627
+Date:           2023-02-05
+
+Source files:   main.cc Date.cc Reservation.cc Room.cc Hotel.cc
+Header files:   defs.h Date.h Reservation.h Room.h Hotel.h
+  Data files:   n/a
+  
+ Compilation:   make
+    Clearing:   make clear
+ 
+   Launching:   ./a1
