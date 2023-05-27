@@ -1,0 +1,30 @@
+Program:        COMP 2404 Assignment 3
+Author:         Taj Randhawa 
+Student Number: 101239627
+Date:           2023-03-19
+
+Source files:   main.cc Controller.cc View.cc Pierres.cc Entity.cc Queue.cc Order.cc Driver.cc Franchise.cc Location.cc FranchiseList.cc DriverList.cc
+
+Header files:   defs.h Controller.h View.h Pierres.h Entity.h Queue.h Order.h Driver.h Franchise.h Location.h FranchiseList.h DriverList.h
+  Data files:   n/a
+  
+ Compilation:   make
+    Clearing:   make clear
+ 
+   Launching:   ./a3
+
+Purpose of classes:
+
+main: Required for executable to run, launches Controller
+Controller: Given test environment
+View: Given, Prints menu for Controller
+Location: Given, stores Location using 2 integers
+Order: Stores a restaurant order using a name, an index for a menu array in Franchise, and Location
+Queue: Stores orders in a queue using a linked list
+Entity: Base class for Driver and Franchise. Stores id, name, Location, and a order Queue
+Driver: extends Entity and contains static constants to signify object is a Driver
+Franchise: extends Entity and contains static constants to signify object is a Franchise. Additonally stores menu using a static variable
+DriverList: LinkedList of Drivers
+FranchiseList: LinkedList of Franchises
+Pierres: Stores drivers and franchises and acts like a restaurant chain
+

@@ -1,0 +1,28 @@
+Program:        COMP 2404 Assignment 2
+Author:         Taj Randhawa 
+Student Number: 101239627
+Date:           2023-02-27
+
+Source files:   main.cc TestControl.cc TestView.cc Album.cc AlbumArray.cc Photo.cc PhotoArray.cc PhotoGram.cc Client.cc Date.cc
+Header files:   defs.h TestControl.h TestView.h Album.h AlbumArray.h Photo.h PhotoArray.h PhotoGram.h Client.h Date.h
+  Data files:   n/a
+  
+ Compilation:   make
+    Clearing:   make clear
+ 
+   Launching:   ./a2
+
+Purpose of classes:
+
+main: Required for executable to run, launches TestControl
+TestControl: Given test environment
+TestView: Given, Prints menu for TestControl
+Date: Given, stores Dates using 3 integers
+Photo: Stores 3 strings, a name, description, and ASCII art
+PhotoArray: Collection for Photos
+Album: Uses PhotoArray to act as an album, with its own title and description.
+AlbumArray: Collection for Albums
+PhotoGram: Uses AlbumArray to store multiple albums, interacts with Client
+Client: Uses AlbumArray to store local albums, can access PhotoGram albums and add them to local
+
+
