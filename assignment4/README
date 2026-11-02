@@ -1,0 +1,34 @@
+Program:        COMP 2404 Assignment 4
+Author:         Taj Randhawa 
+Student Number: 101239627
+Date:           2023-05-26
+
+Source files:   main.cc AlbumCreator.cc View.cc PhotoGram.cc MediaFactory.cc Criteria.cc Album.cc Photo.cc Date.cc
+Header files:   defs.h Array.h AlbumCreator.h View.h PhotoGram.h MediaFactory.h Criteria.h Album.h Photo.h Date.h
+  Data files:   media/phototitles.txt media/photos.txt
+  
+ Compilation:   make
+    Clearing:   make clean
+ 
+   Launching:   ./a4
+
+Both data files are opened by relative path, so a4 must be launched from the
+assignment4 directory.
+
+Purpose of classes:
+
+main: Required for executable to run, launches AlbumCreator
+AlbumCreator: Control layer, runs the menu loop and uploads the photo list on startup
+View: Prints the menus and handles every input prompt
+Date: Stores a date using 3 integers, with comparison operators
+Array: Template collection with a fixed capacity, used for both Photo* and Album*
+Photo: Stores a title, a category, a Date, and ASCII art content
+Album: Uses an Array of Photo pointers, with its own title and description
+PhotoGram: Stores the master photo list and the albums, creates objects through MediaFactory
+MediaFactory: Factory that creates Photos, Albums, and Criteria objects
+Criteria: Abstract base class for photo filters. Cat_Criteria filters by category, Date_Criteria filters by date range, and CandD_Criteria inherits from both to filter on category and date range together
+
+Not built into a4:
+
+test.cc: Standalone tests for Date and Array
+classa2.py: Helper script that prints a class skeleton for a given class name
